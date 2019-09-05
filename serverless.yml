@@ -24,7 +24,7 @@ custom:
 
 functions:
   box:
-    handler: handler.run
+    handler: box.handler
     environment: ${self:custom.environment.${self:provider.stage}}
     events:
       - schedule: rate(100 minutes)

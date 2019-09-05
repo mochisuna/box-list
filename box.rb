@@ -1,6 +1,6 @@
 require "boxr"
 
-def run(event:, context:)
+def handler(event:, context:)
   p ENV.fetch('TARGET_NAME')
   file_dir = ENV.fetch('BOX_JWT_PRIVATE_KEY_DIR')
   token = Boxr::get_user_token(
