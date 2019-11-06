@@ -8,12 +8,7 @@ provider:
   region: ${opt:region, self:custom.default_region}
 
   environment:
-    BOX_USER_ID:                  ${env:BOX_USER_ID}
-    BOX_JWT_PRIVATE_KEY_PASSWORD: ${env:BOX_JWT_PRIVATE_KEY_PASSWORD}
-    BOX_JWT_PRIVATE_KEY_DIR:      input/${opt:stage, self:custom.default_stage}/box_private_key
-    BOX_JWT_PUBLIC_KEY_ID:        ${env:BOX_JWT_PUBLIC_KEY_ID}
-    BOX_CLIENT_ID:                ${env:BOX_CLIENT_ID}
-    BOX_CLIENT_SECRET:            ${env:BOX_CLIENT_SECRET}
+    BOX_JWT_PRIVATE_KEY_DIR: input/${opt:stage, self:custom.default_stage}/box_private_key
 
 custom:
   default_stage: dev
