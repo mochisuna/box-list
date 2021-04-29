@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  reviewers:
+  - mochisuna
+  assignees:
+  - mochisuna
+  ignore:
+  - dependency-name: boxr
+    versions:
+    - 1.16.0
+    - 1.17.0
