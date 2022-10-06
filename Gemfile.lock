@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.7.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     boxr (1.14.0)
       addressable (~> 2.3)
       hashie (~> 3.5)
@@ -11,7 +11,7 @@ GEM
     hashie (3.6.0)
     httpclient (2.8.3)
     jwt (2.2.1)
-    public_suffix (4.0.3)
+    public_suffix (5.0.0)
 
 PLATFORMS
   ruby
